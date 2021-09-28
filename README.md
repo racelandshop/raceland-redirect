@@ -1,4 +1,4 @@
-# raceland-redirect
+# Raceland-redirect
 
 
 Redirect used by raceland homeassistant version 
