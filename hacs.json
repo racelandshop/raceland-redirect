@@ -1,4 +1,5 @@
 {
     "name": "Redirect Raceland",
-    "render_readme": true
+    "render_readme": true, 
+    "filename": "redirect.js"
 }
