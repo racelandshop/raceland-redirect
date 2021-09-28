@@ -4,7 +4,7 @@ var Root;
 var user; 
 var width; 
 var height; 
-
+var Hass
 
 function getDeviceInfo(){
   user = Hass.user.name;
@@ -23,7 +23,7 @@ function run() {
     Root = Root && Root.shadowRoot;
     Root = Root && Root.querySelector("hui-root");
     try {
-      var Hass = Root.hass;
+      Hass = Root.hass;
     }
     catch { }
     if (Root) {
