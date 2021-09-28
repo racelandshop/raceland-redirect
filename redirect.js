@@ -6,11 +6,6 @@ var width;
 var height; 
 var Hass
 
-function getDeviceInfo(){
-  user = Hass.user.name;
-  width = window.innerWidth;
-  height = window.innerHeight;
-}
 
 function run() {
     Root = document.querySelector("home-assistant");
@@ -27,7 +22,9 @@ function run() {
     }
     catch { }
     if (Root) {
-      getDeviceInfo();
+      user = Hass.user.name;
+      width = window.innerWidth;
+      height = window.innerHeight;
       // window.location.href = 'http://192.168.1.142:8123/homekit-infused/main_menu';
       history.replaceState(null, "", "http://192.168.1.142:8123/homekit-infused/main_menu");
       const event = new Event("location-changed", {
