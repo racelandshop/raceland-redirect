@@ -25,19 +25,11 @@ function run() {
       user = Hass.user.name;
       width = window.innerWidth;
       height = window.innerHeight;
-      // window.location.href = 'http://192.168.1.142:8123/homekit-infused/main_menu';
-      history.replaceState(null, "", "http://192.168.1.142:8123/homekit-infused/main_menu");
-      const event = new Event("location-changed", {
-        bubbles: true,
-        composed: true,
-      });
-      event.detail = { replace: true };
-      this.dispatchEvent(event);
-
-    }
+      window.location.href = '/homekit-infused/'
 
     console.log("the User is ", user, " and the screen size is ", width, "x", height);
   }
+}
 
 
 run(); 
