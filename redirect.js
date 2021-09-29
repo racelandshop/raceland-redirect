@@ -7,7 +7,7 @@ var height;
 var Hass
 var phoneWidth = 600;
 var phoneHeight = 800;
-
+var relativeUrl
 
 function run() {
     Root = document.querySelector("home-assistant");
