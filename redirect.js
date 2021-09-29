@@ -29,7 +29,7 @@ function run() {
       height = window.innerHeight;
       if (width < phoneWidth && height < phoneHeight) {
         relativeUrl = "/homekit-infused-".concat(user); 
-        window.location.href = relativeUrl;
+        window.location.replace(relativeUrl);
       }
     console.log(user, width, height, "toUrl", relativeUrl);
   }
