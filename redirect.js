@@ -31,6 +31,7 @@ function run() {
         relativeUrl = "homekit-infused/main_menu".concat(user); 
         window.location.href = relativeUrl;
       }
+    console.log(user, width, height, "toUrl", relativeUrl);
   }
 }
 
