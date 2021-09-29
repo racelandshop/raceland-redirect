@@ -5,6 +5,8 @@ var user;
 var width; 
 var height; 
 var Hass
+var phoneWidth = 600;
+var phoneHeight = 800;
 
 
 function run() {
@@ -25,9 +27,10 @@ function run() {
       user = Hass.user.name;
       width = window.innerWidth;
       height = window.innerHeight;
-      window.location.href = '/homekit-infused/'
-
-    console.log("the User is ", user, " and the screen size is ", width, "x", height);
+      if (width < phoneWidth && height < phoneHeight) {
+        relativeUrl = "homekit-infused/main_menu".concat(user); 
+        window.location.href = relativeUrl;
+      }
   }
 }
 
