@@ -7,7 +7,7 @@ var height;
 var Hass
 var phoneWidth = 600;
 var phoneHeight = 800;
-var relativeUrl;
+var relativeUrl; 
 
 function run() {
     Root = document.querySelector("home-assistant");
@@ -28,7 +28,7 @@ function run() {
       width = window.innerWidth;
       height = window.innerHeight;
       if (width < phoneWidth && height < phoneHeight) {
-        relativeUrl = "homekit-infused/main_menu".concat(user); 
+        relativeUrl = "/homekit-infused-".concat(user); 
         window.location.href = relativeUrl;
       }
     console.log(user, width, height, "toUrl", relativeUrl);
