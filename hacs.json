@@ -1,5 +1,5 @@
 {
     "name": "Redirect Raceland",
     "render_readme": true, 
-    "filename": "redirect.ts"
+    "filename": "dist/redirect.js"
 }
