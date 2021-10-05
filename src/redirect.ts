@@ -1,5 +1,7 @@
 //Javascript class to redirect user to corresponding homekit dashboard
 
+import  { navigate } from "custom-card-helpers";
+
 var Root; 
 var user; 
 var width; 
@@ -27,13 +29,11 @@ function run() {
       user = Hass.user.name;
       width = window.innerWidth;
       height = window.innerHeight;
-      if (width < phoneWidth && height < phoneHeight) {
-        relativeUrl = "/homekit-infused-".concat(user); 
-        window.location.replace(relativeUrl);
+      if (width <= phoneWidth && height <= phoneHeight) {
+        console.log("phone detected")
+        navigate('', `/homekit-infused-${user}/main_menu`, false); 
       }
-    console.log(user, width, height, "toUrl", relativeUrl);
   }
 }
-
 
 run(); 
