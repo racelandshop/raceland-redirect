@@ -10,4 +10,10 @@ To install depedencies:
 
 ```npm install ``` 
 
-To compile and 'serve' the javascript file to localhost (in my oppinion facilitates development)
+To compile and 'serve' the javascript file to localhost  (in my oppinion facilitates development)
+
+```npm start ``` 
+
+To build
+
+```npm build ``` 
