@@ -1,8 +1,7 @@
 # Raceland-redirect
 
-
 Redirect used by raceland-homeassistant 
-Used to redirect user to homekit dashboard when in mobile (600 x 800)
+Used to redirect user to homekit dashboard when in mobile (600px x 800px)
 
 ### Development 
 
