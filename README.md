@@ -9,6 +9,10 @@ To install depedencies:
 
 ```npm install ``` 
 
-To compile and 'serve' the javascript file to localhost (in my oppinion facilitates development)
+To compile and 'serve' the javascript file to localhost url http://127.0.0.1:5000/redirect.js (in my opinion facilitates development)
 
-``` yarn start ```
+```npm start```
+
+To build
+
+```npm build``` 
